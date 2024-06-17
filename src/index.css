@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* ::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+p,
+li,
+a {
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+  /* background-color: var(--background-color); */
+  background: hsla(250, 25%, 18%, 1);
+
+  background: linear-gradient(
+    270deg,
+    hsla(250, 25%, 18%, 1) 0%,
+    hsla(249, 26%, 39%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    270deg,
+    hsla(250, 25%, 18%, 1) 0%,
+    hsla(249, 26%, 39%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    270deg,
+    hsla(250, 25%, 18%, 1) 0%,
+    hsla(249, 26%, 39%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#27233A", endColorstr="#524A7D", GradientType=1 );
+  height: 100vh;
+}
+
+:root {
+  --font-1: "Roboto", sans-serif;
+  --font-2: "Inter", sans-serif;
+  --transition: all ease-in 300ms;
+  --background-color: #27233a;
+  --secondary-background-color: #433b69;
+  --secondary-color: #e6e6fa;
+  --hover-color: rgb(255, 60, 0);
+}

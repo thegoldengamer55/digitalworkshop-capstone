@@ -1,0 +1,242 @@
+.home-music-container {
+  width: 100%;
+  /* height: 1200px; */
+  padding-bottom: 100px;
+  background-color: var(--background-color);
+}
+
+.home-music {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.home-music h1 {
+  font-size: 60px;
+  font-family: var(--font-1);
+  color: white;
+}
+
+.home-music h2 {
+  font-size: 30px;
+  font-family: var(--font-1);
+  color: var(--secondary-color);
+  font-weight: 300;
+}
+
+.home-music h3 {
+  font-size: 35px;
+  font-family: var(--font-1);
+  color: var(--secondary-color);
+  font-weight: 500;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+
+.home-music h4 {
+  font-size: 22px;
+  font-family: var(--font-1);
+  color: var(--secondary-color);
+  font-weight: 400;
+  padding: 0px 20px;
+  margin-bottom: 10px;
+}
+
+.home-music p {
+  font-size: 18px;
+  font-family: var(--font-1);
+  color: var(--secondary-color);
+  font-weight: 300;
+  padding: 0px 20px;
+}
+
+.home-music .release-container {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.home-music .release-container .release {
+  background-color: var(--secondary-background-color);
+  padding-bottom: 40px;
+  border-radius: 20px;
+  width: 400px;
+}
+
+.home-music .release-container .release:hover {
+  transition: var(--transition);
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+.home-music .release-container .release:hover h3 {
+  transition: var(--transition);
+  color: rgb(255, 60, 0);
+}
+
+.home-music .release-container .release img {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.home-music .music-btn-container {
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: white;
+  width: 200px;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.home-music .music-btn {
+  color: var(--background-color);
+  font-family: var(--font-1);
+  font-weight: 500;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+.home-music .music-btn-container:hover {
+  transition: var(--transition);
+  background: none;
+}
+
+.home-music .music-btn-container .music-btn:hover {
+  transition: var(--transition);
+  color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .home-music {
+    width: 100%;
+  }
+  .home-music h1 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .home-music h2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home-music .release-container .release {
+    padding-bottom: 40px;
+    border-radius: 20px;
+    width: 250px;
+  }
+  .home-music .release-container .release img {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .home-music h3 {
+    font-size: 25px;
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 0px 20px;
+    margin-bottom: 5px;
+  }
+
+  .home-music h4 {
+    font-size: 20px;
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    font-weight: 400;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+  }
+
+  .home-music p {
+    font-size: 15px;
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    font-weight: 300;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .home-music .release-container .release {
+    padding-bottom: 40px;
+    width: 90%;
+    border-radius: 20px;
+  }
+  .home-music .release-container .release img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+  .home-music h3 {
+    font-size: 25px;
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 0px 20px;
+    margin-bottom: 5px;
+  }
+
+  .home-music h4 {
+    font-size: 20px;
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    font-weight: 400;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+  }
+
+  .home-music p {
+    font-size: 15px;
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    font-weight: 300;
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home-music h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .home-music h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  /* .home-music h3 {
+    font-size: 35px;
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 0px 20px;
+    margin-bottom: 5px;
+  }
+
+  .home-music h4 {
+    font-size: 22px;
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    font-weight: 400;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+  }
+
+  .home-music p {
+    font-size: 18px;
+    font-family: var(--font-1);
+    color: var(--secondary-color);
+    font-weight: 300;
+    padding: 0px 20px;
+  } */
+}

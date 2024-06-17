@@ -1,0 +1,353 @@
+.music {
+  background-color: #1c192c;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.music h1 {
+  color: white;
+  font-size: 60px;
+  font-family: var(--font-2);
+  text-align: center;
+}
+
+.underline {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+/* music section */
+
+.albums-2 {
+  transition: var(--transition);
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  animation: pageOne 0.5s ease-in;
+}
+
+.page-2 {
+  transition: var(--transition);
+  left: -94.5%;
+  animation: pageTwo 0.5s ease-in;
+}
+
+.albums-2-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 4rem;
+  column-gap: 2rem;
+  width: 100%;
+  min-width: 100%;
+  margin-top: 50px;
+  position: relative;
+  left: 0%;
+  /* min-width: calc(175px * 8); */
+  /* animation: autoRun 10s linear infinite; */
+}
+
+.sec-2 {
+  left: 5%;
+}
+
+.albums-2 .albums-2-section .album {
+  width: 175px;
+  height: 175px;
+}
+
+.albums-2 .album img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+@keyframes pageTwo {
+  from {
+    left: 0%;
+  }
+  to {
+    left: -94.5%;
+  }
+}
+
+@keyframes pageOne {
+  from {
+    left: -94.5%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+/* Album on Hover */
+
+.albums-2 .album .album-content {
+  display: none;
+}
+
+.albums-2 .album:hover {
+  cursor: pointer;
+}
+
+.albums-2 .album:hover .album-content {
+  display: flex;
+}
+
+.albums-2 .album .album-content {
+  /* display: flex; */
+  /* position: absolute; */
+  top: -180px;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.albums-2 .album .album-content h2 {
+  color: white;
+  font-size: 30px;
+  font-family: var(--font-1);
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 20px;
+  border: 1px solid white;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1020px) {
+  .albums-2 .albums-2-section .album {
+    width: 125px;
+    height: 125px;
+  }
+  .albums-2 .album .album-content {
+    width: 125px;
+    height: 125px;
+    top: -130px;
+  }
+  .albums-2 .album .album-content h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .albums-2 .albums-2-section .album {
+    width: 100px;
+    height: 100px;
+  }
+  .albums-2 .album .album-content {
+    width: 100px;
+    height: 100px;
+    top: -105px;
+  }
+  .albums-2 .album .album-content h2 {
+    font-size: 20px;
+  }
+  .albums-2-section {
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .albums-2 .albums-2-section .album {
+    width: 80px;
+    height: 80px;
+  }
+  .albums-2 .album .album-content {
+    width: 80px;
+    height: 80px;
+    top: -85px;
+  }
+}
+
+/* Album View */
+
+.album-view-background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  top: 0px;
+}
+
+.album-view {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin-top: 175px;
+  align-items: center;
+  z-index: 3;
+}
+
+.album-view-container {
+  background-color: var(--secondary-background-color);
+  width: 400px;
+  height: 170px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.album-view-container h2 {
+  color: white;
+  font-family: var(--font-2);
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.album-view-container h3 {
+  color: white;
+  font-family: var(--font-1);
+  padding-left: 20px;
+  padding-top: 5px;
+  font-weight: 500;
+}
+
+.album-view-container p {
+  color: white;
+  font-family: var(--font-1);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  font-weight: 300;
+}
+
+.media {
+  width: 95%;
+  padding: 20px 10px;
+  display: flex;
+}
+
+.close-album {
+  color: var(--background-color);
+  font-size: 50px;
+  margin-right: 550px;
+  margin-bottom: -80px;
+  padding: 10px;
+  border: 4px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+}
+
+.close-album:hover {
+  transition: var(--transition);
+  background: none;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.hide-album-view-background {
+  display: none;
+}
+
+.album-view-image {
+  display: block;
+  width: 400px !important;
+  height: 400px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.hide-image {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .album-view-image {
+    display: block;
+    width: 250px !important;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .close-album {
+    margin-right: 400px;
+    margin-bottom: -65px;
+    padding: 3px;
+  }
+
+  .album-view-container {
+    background-color: var(--secondary-background-color);
+    width: 250px;
+    height: 170px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .media {
+    padding: 20px 7px;
+  }
+}
+
+/* Pagination section */
+
+.album-pagination {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+  margin-top: 50px;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 5px 0px;
+}
+
+.album-pagination .arrow {
+  font-weight: bold;
+  background-color: var(--background-color);
+  width: 80px;
+  height: 40px;
+  color: white;
+  border: 2px solid var(--background-color);
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.album-pagination .arrow:hover {
+  transition: var(--transition);
+  color: var(--background-color);
+  background: none;
+  cursor: pointer;
+}
+
+.album-pagination .numbers {
+  display: flex;
+  gap: 10px;
+}
+
+.album-pagination .number {
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  border: 2px solid var(--background-color);
+  border-radius: 5px;
+  background-color: var(--background-color);
+  color: white;
+}
+
+.album-pagination .number-active {
+  font-size: 18px;
+  font-weight: bold;
+  height: 40px;
+  width: 40px;
+  border: 2px solid var(--background-color);
+  border-radius: 5px;
+  background-color: none;
+  color: var(--background-color);
+}
+
+.album-pagination .number:hover {
+  transition: var(--transition);
+  color: var(--background-color);
+  background: none;
+  cursor: pointer;
+}

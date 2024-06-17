@@ -1,0 +1,15 @@
+.music-singles {
+  background-color: #1c192c;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.music-singles h1 {
+  color: white;
+  font-size: 60px;
+  font-family: var(--font-2);
+  text-align: center;
+}
+.music-singles .singles {
+  height: 500px;
+}

@@ -1,0 +1,262 @@
+.hero {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 220px;
+  position: relative;
+  z-index: 1;
+  height: 900px;
+}
+
+.hero h1 {
+  color: white;
+  font-family: var(--font-1);
+  font-size: 50px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-family: var(--font-2);
+  text-align: center;
+  color: #e6e6fa;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.hero h3 {
+  font-family: var(--font-2);
+  text-align: center;
+  /* color: #e6e6fa; */
+  color: var(--background-color);
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.hero .hero-sections {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 100px;
+}
+
+.hero-sections .section {
+  width: 450px;
+  height: 350px;
+  border-radius: 40px;
+  background-color: #e6e6fa;
+  border: 4px solid #e6e6fa;
+}
+
+.hero-sections .section a {
+  display: block;
+  height: 350px;
+}
+
+.hero-sections .section:hover {
+  transition: var(--transition);
+  margin-top: -5px;
+  background: none;
+}
+
+.hero-sections .section:hover h1,
+.hero-sections .section:hover h5,
+.hero-sections .section:hover p,
+.hero-sections .section:hover .music-icon,
+.hero-sections .section:hover .trending-icon {
+  transition: var(--transition);
+  color: white;
+}
+
+.hero-sections .section .music-icon,
+.hero-sections .section .trending-icon {
+  color: black;
+  font-size: 70px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  font-family: var(--font-2);
+  font-weight: 500;
+}
+
+.hero-sections .section h1 {
+  color: black;
+  font-size: 35px;
+  padding-top: 40px;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.hero-sections .section h5 {
+  color: black;
+  font-family: var(--font-2);
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.hero-sections .section p {
+  color: black;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  font-family: var(--font-2);
+  font-weight: 500;
+}
+
+.hero .contact-container {
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 40px;
+  background-color: var(--secondary-color);
+  width: 80%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .hero .contact-container:hover {
+  transition: var(--transition);
+  margin-top: 40px;
+} */
+
+.hero .contact {
+  display: flex;
+  justify-content: center;
+  /* padding-top: 20px; */
+}
+
+.hero .contact-btn {
+  margin: 30px 0px;
+  display: block;
+  width: 240px;
+  height: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  color: white;
+  border: 3px solid var(--background-color);
+  font-family: var(--font-1);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.hero .contact-btn:hover {
+  transition: var(--transition);
+  color: var(--background-color);
+  background: none;
+}
+
+@media screen and (max-width: 1400px) {
+  .hero .contact-container {
+    height: 150px;
+  }
+  .hero .contact-btn {
+    margin: 15px 0px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .hero .contact-container {
+    height: 150px;
+    width: 100%;
+  }
+  .hero h3 {
+    font-size: 25px;
+  }
+  .hero {
+    margin-top: 170px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .hero .hero-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 100px;
+  }
+
+  .hero-sections .section {
+    width: 450px;
+    height: 350px;
+    border-radius: 40px;
+    background-color: #e6e6fa;
+    border: 4px solid #e6e6fa;
+  }
+  .hero {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 220px;
+    position: relative;
+    z-index: 1;
+    height: 1300px;
+  }
+  body {
+    background: #433b69 !important;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero .hero-sections {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 100px;
+  }
+
+  .hero-sections .section {
+    width: 100%;
+  }
+  .hero .contact-container {
+    padding-top: 10px;
+    border-radius: 20px;
+  }
+
+  /* .hero .contact-container:hover {
+    transition: var(--transition);
+    margin-top: 40px;
+  } */
+
+  .hero .contact {
+    display: flex;
+    justify-content: center;
+    /* padding-top: 20px; */
+  }
+
+  .hero .contact-btn {
+    margin: 30px 0px;
+    display: block;
+    width: 140px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+    color: white;
+    border: 3px solid var(--background-color);
+    font-family: var(--font-1);
+    font-weight: 600;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,139 @@
+.music-hero {
+  padding-top: 150px;
+  background-color: #1c192c;
+  width: 100%;
+  margin-bottom: 335px;
+}
+
+.music-hero h1 {
+  color: white;
+  font-family: var(--font-2);
+  font-size: 80px;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.music-hero h2 {
+  color: var(--secondary-color);
+  font-family: var(--font-1);
+  font-weight: 300;
+  font-size: 40px;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.music-hero .btns {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.music-hero a {
+  display: block;
+  width: 200px;
+  color: var(--background-color);
+  background-color: white;
+  border: 3px solid white;
+  font-family: var(--font-1);
+  font-weight: bold;
+  font-size: 26px;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 40px;
+}
+
+.music-hero a:hover {
+  transition: var(--transition);
+  color: white;
+  background: none;
+}
+
+.music-overlay-section {
+  position: absolute;
+  width: 100%;
+  top: 100px;
+}
+
+.music-overlay {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  z-index: 3;
+  background-color: rgba(18, 2, 22, 0.9);
+}
+
+.music-overlay-section img {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1150px) {
+  .music-hero h1 {
+    color: white;
+    font-family: var(--font-2);
+    font-size: 80px;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .music-hero h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .music-hero h1 {
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .music-hero h2 {
+    font-size: 26px;
+  }
+  .music-hero .btns {
+    gap: 2rem;
+  }
+
+  .music-hero a {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .music-hero .btns {
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .music-hero a {
+    width: 70%;
+  }
+  .music-hero {
+    margin-bottom: 145px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .music-hero a {
+    font-size: 20px;
+    width: 80%;
+  }
+  .music-hero h1 {
+    font-size: 40px;
+    margin-top: 50px;
+  }
+  .music-hero h2 {
+    font-size: 22px;
+  }
+}

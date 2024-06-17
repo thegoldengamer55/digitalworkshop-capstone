@@ -1,0 +1,152 @@
+.faq-container {
+  padding-top: 200px;
+  width: 100%;
+  background-color: var(--secondary-background-color);
+  padding-bottom: 60px;
+}
+
+.faq-container h1 {
+  font-family: var(--font-2);
+  color: white;
+  font-size: 80px;
+  text-align: center;
+}
+
+.faq h2 {
+  font-family: var(--font-1);
+  color: white;
+  font-size: 20px;
+  text-align: left;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+
+@media screen and (max-width: 1300px) {
+  .faq-container h1 {
+    font-size: 50px;
+  }
+}
+
+.faq-container h3 {
+  font-family: var(--font-1);
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  font-weight: 500;
+  padding: 20px 0px;
+}
+
+.faq p {
+  font-family: var(--font-1);
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 300;
+  padding: 0px 20px 20px 20px;
+}
+
+.faq {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: var(--background-color);
+  border: 4px solid var(--background-color);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-2,
+.faq-3,
+.faq-4 {
+  margin-top: 10px;
+}
+
+.faq:hover {
+  transition: var(--transition);
+  cursor: pointer;
+  border: 4px solid var(--secondary-color);
+}
+
+.faq-hide {
+  display: none;
+}
+
+.faq-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* gap: 30%; */
+}
+
+.faq-left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  width: 95%;
+}
+
+.faq-icon {
+  color: white;
+  margin-left: 20px;
+  font-size: 30px !important;
+  width: 30px;
+  /* position: relative; */
+}
+
+@media screen and (max-width: 1020px) {
+  .faq-icon {
+    display: none;
+  }
+  .faq-left {
+    margin-left: 20px;
+  }
+}
+
+.down-arrow {
+  margin-right: 20px;
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+  .faq {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .faq {
+    width: 100%;
+    border-radius: 0px;
+  }
+  .faq-container h1 {
+    font-size: 40px;
+  }
+}
+
+/* Contact */
+
+.faq-contact-container {
+  width: 100%;
+}
+
+.faq-contact {
+  display: block;
+  background-color: white;
+  padding: 15px;
+  width: 50%;
+  color: var(--background-color);
+  border: 4px solid white;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: var(--font-1);
+  border-radius: 25px;
+}
+
+.faq-contact:hover {
+  transition: var(--transition);
+  background: none;
+  color: white;
+}

@@ -1,0 +1,81 @@
+.contact-main {
+  padding-top: 100px;
+  width: 100%;
+  padding-bottom: 0px;
+  background-color: var(--secondary-background-color);
+  padding-bottom: 700px;
+}
+
+.contact-main h1 {
+  font-family: var(--font-1);
+  color: white;
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact-main h2 {
+  font-family: var(--font-2);
+  color: white;
+  font-size: 40px;
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact-main .image-overlay p {
+  font-family: var(--font-1);
+  color: white;
+  font-size: 20px;
+  width: 80%;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.contact-main img {
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  z-index: 0;
+}
+
+.contact-main .image-overlay {
+  background-color: rgba(35, 19, 41, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+@media screen and (max-width: 720px) {
+  .contact-main h1 {
+    font-size: 50px;
+  }
+
+  .contact-main h2 {
+    font-size: 30px;
+  }
+  .contact-main .image-overlay p {
+    font-size: 18px;
+  }
+
+  .contact-main img {
+    height: 500px;
+  }
+
+  .contact-main {
+    padding-bottom: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contact-main .image-overlay p {
+    font-size: 16px;
+  }
+}
